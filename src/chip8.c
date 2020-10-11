@@ -27,7 +27,9 @@ void emulate(Chip8State *machine)
         case 0x02: 
             {
                 // An experimental stack cleanup
-                push(&machine, (code[0]&0x0f<<8) | code[1]);
+                uint16_t call = (code[0]&0x0f<<8) | code[1];
+                push(&machine);
+                machine->PC = call;
                 // machine->SP -= 2;                                     
                 // machine->memory[machine->SP] = ((machine->PC+2) & 0xFF00) >> 8;
                 // machine->memory[machine->SP+1] = (machine->PC+2) & 0xFF;
@@ -38,16 +40,30 @@ void emulate(Chip8State *machine)
                 uint8_t reg = code[0] & 0x0f;
                 if(machine->V[reg] == code[1])
                     machine->PC += 2;
-                state->PC+=2;
+                machine->PC+=2;
             } 
+        case 0x04:
+            {
+                uint8_t reg = code[0] & 0x0f;
+                if(machine->V[reg] != code[1])
+                    machine->PC += 2;
+                machine->PC+=2;
+            }
+        case 0x05:
+            {
+               uint8_t reg1 = code[0] & 0x0f;
+               uint8_t reg2 = code[1] >> 4;
+                if(machine->V[reg1] == machine->V[reg2])
+                    machine->PC += 2;
+                machine->PC+=2; 
+            }
     }
 
 }
 
-void push(Chip8State *machine, uint16_t code)
+void push(Chip8State *machine)
 {
     machine->SP -= 2;
     machine->memory[machine->SP] = ((machine->PC+2) & 0xFF00) >> 8;
     machine->memory[machine->SP+1] = (machine->PC+2) & 0xFF;
-    machine->PC = code;
 }
