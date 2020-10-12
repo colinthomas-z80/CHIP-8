@@ -14,8 +14,11 @@ typedef struct Chip8State {
     uint8_t sound;
     uint8_t *memory;
     uint8_t *screen; // starts at 0xFF00
+    uint8_t key_press;
 } Chip8State;
 
 
 void disassemble(uint8_t *, int);
+void emulate(Chip8State *);
 Chip8State* InitChip8(void);
+

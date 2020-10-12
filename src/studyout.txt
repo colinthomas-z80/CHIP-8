@@ -1,0 +1,161 @@
+PC:0200  00e0 //cls
+PC:0202  a220 ld i 0220
+PC:0204  6208 v2 = x04
+PC:0206  60f8 v0 = xf8
+PC:0208  7008 v0 += x08
+PC:020a  6110 v1 = x10
+PC:020c  4020 skip if v0 != x20 skipped
+PC:0210  d108 draw sprite at v1 v0 8lines tall 
+PC:0212  f21e reg i += V[2]   
+PC:0214  7108 v1 += x08
+PC:0216  4130 skip if v1 != x30 skipped
+PC:021a  1210 jump 210
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:0218  1208 
+PC:0208  7008 
+PC:020a  6110 
+PC:020c  4020 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:0218  1208 
+PC:0208  7008 
+PC:020a  6110 
+PC:020c  4020 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:0218  1208 
+PC:0208  7008 
+PC:020a  6110 
+PC:020c  4020 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 draw sprite at v1 v0 8 lines tall
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:021a  1210 
+PC:0210  d108 
+PC:0212  f21e 
+PC:0214  7108 
+PC:0216  4130 
+PC:0218  1208 
+PC:0208  7008 
+PC:020a  6110 
+PC:020c  4020 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+PC:020e  120e 
+Terminated Successfully
